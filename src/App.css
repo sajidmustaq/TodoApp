@@ -1,0 +1,150 @@
+
+
+/* src/TodoApp.css */
+.todo-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 2rem auto;
+  background-color: #fefae0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  color: #222d42;
+}
+
+.todo-container h2 {
+  text-align: center;
+  color: #222d42;
+}
+
+.input-container {
+  display: flex;
+  gap: 8px;
+  justify-content: space-around;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 8px;
+  border: 2px solid #ccd5ae;
+  border-radius: 4px;
+}
+
+.input-container button {
+  padding: 8px 12px;
+  background-color: #ccd5ae;
+  color: #222d42;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.input-container button:hover {
+  background-color: #b3bd95;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9edc9;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.task-list li span {
+  cursor: pointer;
+}
+
+.task-list li button {
+  background: none;
+  border: none;
+  color: #d4a373;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.task-list li button:hover {
+  color: #bb8f61;
+}
+.fa-check-circle{
+  margin-right: 3px;
+  background-color: #f3030f;
+}
+.fa-edit{
+  margin-right: 5px;
+  color: #247c01;
+  font-size: x-large;
+}
+.fa-trash,.fa-plus{
+  margin-left: 5px;
+  color: #f3030f;
+  font-size: x-large;
+}
+.fa-plus{
+  margin-right: 8px;
+  color: #f3030f;
+  font-size: large;
+
+}
+.fa-edit:hover ,.fa-trash:hover{
+cursor: pointer;
+}
+.submitBtn {
+  font-weight: 500;
+  font-size: large;
+}
+
+
+/* sweet alart */
+/* SweetAlert confirm button */
+.swal-confirm-btn {
+  background-color: #3085d6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.swal-confirm-btn:hover {
+  background-color: #256bb5;
+}
+#swal2-title{
+margin-top: 15px;
+}
+.swal2-icon{
+  font-size: small;
+}
+
+/* SweetAlert cancel button */
+.swal-cancel-btn {
+  background-color: #d33;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.swal-cancel-btn:hover {
+  background-color: #b32424;
+}
